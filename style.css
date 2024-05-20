@@ -1,0 +1,96 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f7f1;
+    /* Açık yeşil arka plan */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    /* Sayfa içeriğini ortala */
+}
+
+h3 {
+    color: #4a7d4a;
+    /* Koyu yeşil yazı rengi */
+    margin-top: 50px;
+    /* Başlığın üst kısmında boşluk */
+}
+
+img {
+    margin-top: 20px;
+    /* Görsel için üst boşluk */
+}
+
+form {
+    background-color: #d6e8d4;
+    /* Hafif yeşil arka plan */
+    display: inline-block;
+    /* Ortalamak için gerekli */
+    padding: 20px;
+    border: 1px solid #4a7d4a;
+    /* Yeşil çerçeve */
+    border-radius: 10px;
+    /* Köşeleri yuvarlaklaştır */
+    text-align: center;
+    /* Form içeriğini ortaya hizala */
+}
+
+input {
+    margin: 10px 0;
+    /* Giriş alanları için dikey boşluk */
+    padding: 10px;
+    border: 1px solid #4a7d4a;
+    /* Yeşil çerçeve */
+    border-radius: 5px;
+    /* Köşeleri yuvarlaklaştır */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 200px;
+    /* Genişliği sabit ayarla */
+}
+
+button,
+input[type="reset"] {
+    background-color: #4a7d4a;
+    /* Yeşil arka plan */
+    color: white;
+    /* Beyaz yazı rengi */
+    border: none;
+    /* Sınırları kaldır */
+    padding: 10px 20px;
+    /* Düğme iç boşlukları */
+    border-radius: 5px;
+    /* Köşeleri yuvarlaklaştır */
+    cursor: pointer;
+    /* Fare imlecini işaretçiye dönüştür */
+}
+
+button:hover {
+    background-color: #386038;
+    /* Hover rengi daha koyu yeşil */
+}
+
+input[type="reset"]:hover {
+    background-color: #ac1409;
+    /* Hover rengi kırmızı */
+}
+
+a {
+    color: #4a7d4a;
+    /* Bağlantılar için yeşil */
+    text-decoration: none;
+    /* Alt çizgiyi kaldır */
+}
+
+a:hover {
+    text-decoration: underline;
+    /* Üzerine gelince alt çizgi */
+}
+
+div {
+    margin: 20px 0;
+    /* Her bir bölüm için boşluk */
+}

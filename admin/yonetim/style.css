@@ -1,0 +1,74 @@
+/* CSS stilleri */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f7f1;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Yatay kaydırmayı engelle */
+}
+
+/* Sabit yan menü (sola sabit) */
+.sidebar {
+    background-color: #4a7d4a;
+    position: fixed; /* Sabit menü */
+    top: 0;
+    left: 0;
+    height: 100%; /* Dikey kaplama */
+    width: 200px; /* Yan menü genişliği */
+    padding-top: 20px; /* Üst boşluk */
+    text-align: center; /* Yazıyı sola hizala */
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block; /* Blok şeklinde görünüm */
+    font-size: 16px;
+}
+
+.sidebar a:hover {
+    background-color: #3d663d;
+    border: 2px solid white; /* Beyaz çerçeve */
+}
+
+/* CSS stilleri */
+.dropdown {
+    position: relative;
+    width: 100%; /* Yan menü genişliği */
+    cursor: pointer; /* Tıklanabilirliği göster */
+}
+
+.dropdown-content {
+    display: none; /* Başlangıçta gizli */
+    max-height: 0;
+    overflow: hidden;
+    background-color: #4a7d4a;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    transition: max-height 0.5s ease-out; /* Açılır/kapanır animasyon */
+    border: 2px solid white; /* Beyaz çerçeve */
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block; /* Blok görünüm */
+}
+
+.dropdown-content a:hover {
+    background-color: #3d663d; /* Hover rengi */
+}
+
+/* Dropdown'da hover'ı kaldırıyoruz, tıklama ile açılmasını istiyoruz */
+.dropdown:hover .dropdown-content {
+    display: none; /* Fare üzerine gelince açılmaması için */
+}
+
+/* İçerik kısmı */
+.content {
+    margin-left: 200px; /* Yan menü genişliğinde boşluk bırak */
+    padding: 20px; /* İçerik boşluğu */
+}

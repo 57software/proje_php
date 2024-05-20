@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>SweetAlert Kullanım Örneği</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <script>
+        // Sayfa yüklendiğinde bir SweetAlert uyarısı gösterme
+        document.addEventListener("DOMContentLoaded", function() {
+            Swal.fire({
+                title: 'Dikkat!',
+                text: 'Bu bir uyarı mesajıdır.',
+                icon: 'warning', // 'success', 'error', 'info', 'warning', 'question'
+                confirmButtonText: 'Tamam'
+            });
+        });
+    </script>
+</body>
+</html>
